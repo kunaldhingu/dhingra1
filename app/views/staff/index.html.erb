@@ -1,0 +1,11 @@
+<h1> LIST OF ALL STAFF MEMBERS  </h1>
+<p>Here is a list of all the people who are available with us to help us serve better. Kindly press on the downward link to display various details about the staff members that might help the you to get served better</p>
+
+<% @staffs.each do |staff|  %>
+<body>
+<ul class="list-group">
+  <li class="list-group-item"><%=staff.name%>  </li>
+</ul>
+</body>
+<%=link_to("More Details ", { :controller=>'staffs' , :action=>'show', :id=>staff.id } , :class=>'action show')%>
+<%  end  %>

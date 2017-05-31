@@ -1,0 +1,14 @@
+<%=link_to("Previous page", cabs_path, :class=>'back-link')%>
+<h1> Member Details</h1>
+<p>Find me in app/views/staff/show.html.erb</p>
+
+<div class="cabs show">
+	<h2> SHOW  CAB  </h2>
+
+<div class="list-group">
+  <a href="#" class="list-group-item">NAME                 :<%=@staff.name%></a>
+  <a href="#" class="list-group-item">PHONE             : <%=@staff.phone%></a>
+  <a href="#" class="list-group-item">ADDRESS     : <%=@staff.address%></a>
+<a href="#" class="list-group-item">SALARY               : <%=@staff.salary%></a>
+<a href="#" class="list-group-item">AGE  :<%=@staff.age %></a>
+</div>
